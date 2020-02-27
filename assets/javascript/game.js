@@ -46,7 +46,6 @@ function myClick1() {
     }
 
 }
-
 function myClick2() {
     Score = Score + crystalTwo;
     $(".Score").text(Score);
@@ -96,6 +95,7 @@ function myClick4() {
     }
 
 }
+
 
 function resetOne() {
     Score = 0;
