@@ -1,6 +1,8 @@
 //Variables
-var randNum = Math.floor(Math.random() * 100) + 15;
+var randNum = Math.floor(Math.random() * 100) + 1;
+$(".randNum").text(randNum);
 console.log(randNum);
+
 
 var Win = 0;
 
