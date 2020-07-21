@@ -1,0 +1,57 @@
+.container1{
+    text-align: center;
+    background-color: lightblue;
+}
+
+#rules-area{
+margin: 50px;
+}
+
+.randomBox{
+margin: 10px;
+}
+
+.winBox{
+margin: 10px;
+}
+
+.scoreBox{
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.loseBox{
+margin: 10px;
+}
+.crystalOne{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+.crystalTwo{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+.crystalThree{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+.crystalFour{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/javascript/game.js" rel="stylesheet" type="text/javascript"></script>
 
@@ -16,9 +20,12 @@
 
 <body>
 
-    <h1>Crystal Collector!</h1>
 
-
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container1">
+            <h1 class="display-4">Crystal Collector</h1>
+        </div>
+    </div>
 
 
     <div id="rules-area">
@@ -28,26 +35,24 @@
             You win the game by matching your total score to random number, you lose the game if your total score goes
             above the random number.
             The value of each crystal is hidden from you until you click on it.
-            Each time when the game starts, the game will change the values of each crystal</h2>
+            Each time when the game starts, the game will change the values of each crystal.</h2>
     </div>
 
     <div class="randomBox">
         <h3>Match this number: <span class="randNum">0</span></h3>
     </div>
-    <!-- <p>Match this number to win!</p>
-    <p class="randNum"></p> -->
 
     <div class="winBox">
         <h3>Wins: <span class="Win">0</span></h3>
     </div>
-    <!-- <p>Wins:</p>
-    <p class="Win">0</p> -->
-    <!-- <p>Losses:</p>
-    <p class="Losses">0</p> -->
+
     <div class="loseBox">
         <h3>Losses: <span class="Losses">0</span></h3>
     </div>
 
+    <div class="scoreBox">
+        <h3>Total:<span class="Score">0</span></h3>
+    </div>
 
 
     <button onclick=myClick1() class="crystalOne"> <img src="assets/images/Crystal1.jpg"></button>
@@ -55,12 +60,8 @@
     <button onclick=myClick3() class="crystalThree"><img src="assets/images/Crystal3.jpg"></button>
     <button onclick=myClick4() class="crystalFour"><img src="assets/images/Crystal4.jpg"></button>
 
-    <!-- <p>Your total score is:</p>
-    <p class="Score">0</p> -->
 
-    <div class="scoreBox"><h3>Total:<span class="Score">0</span></h3></div>
-
-
+<footer>A|G Design</footer>
 </body>
 
 </html>
