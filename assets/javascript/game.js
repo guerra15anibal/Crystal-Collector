@@ -1,7 +1,15 @@
+$(document).ready(function () {
+    Start()
+    
+})
 //Variables
 var randNum = Math.floor(Math.random() * 100) + 1;
-$(".randNum").text(randNum);
-console.log(randNum);
+
+function Start() {
+    $(".randNum").text(randNum);
+    console.log(randNum)
+}
+
 
 
 var Win = 0;
@@ -19,17 +27,23 @@ var crystalThree = Math.floor(Math.random() * 12) + 1;
 var crystalFour = Math.floor(Math.random() * 12) + 1;
 
 function Wins() {
+    alert("YOU WON!")
     Win++
     $(".Win").text(Win);
-    resetTwo();
+    Score = 0;
+    $(".Score").text(Score);
+    reset();
     resetOne();
 }
 
 function Losses() {
-        Lose++
-        $(".Losses").text(Lose);
-        resetTwo();
-        resetOne();
+    alert("YOU LOST!")
+    Lose++
+    $(".Losses").text(Lose);
+    Score = 0;
+    $(".Score").text(Score);
+    reset();
+    resetOne();
 }
 
 function myClick1() {
@@ -38,13 +52,11 @@ function myClick1() {
     console.log(crystalOne);
     if (Score === randNum) {
         Wins();
-        resetTwo();
-        resetOne();
+        reset();
 
-    }else if (Score > randNum){
+    } else if (Score > randNum) {
         Losses();
-        resetTwo();
-        resetOne();
+        reset();
     }
 
 }
@@ -54,12 +66,10 @@ function myClick2() {
     console.log(crystalTwo);
     if (Score === randNum) {
         Wins();
-        resetTwo();
-        resetOne();
-    }else if (Score > randNum){
+        reset();
+    } else if (Score > randNum) {
         Losses();
-        resetTwo();
-        resetOne();
+        reset();
     }
 
 }
@@ -70,13 +80,11 @@ function myClick3() {
     console.log(crystalThree);
     if (Score === randNum) {
         Wins();
-        resetTwo();
-        resetOne();
+        reset();
 
-    }else if (Score > randNum){
+    } else if (Score > randNum) {
         Losses();
-        resetTwo();
-        resetOne();
+        reset();
     }
 
 }
@@ -87,28 +95,22 @@ function myClick4() {
     console.log(crystalFour);
     if (Score === randNum) {
         Wins();
-        resetTwo();
-        resetOne();
+        reset();
 
-    }else if (Score > randNum){
+    } else if (Score > randNum) {
         Losses();
-        resetTwo();
-        resetOne();
+        reset();
     }
 
 }
 
 
-function resetOne() {
-    Score = 0;
-    $("Score").text(Score);
-}
-
-function resetTwo() {
+function reset() {
     randNum = Math.floor(Math.random() * 100) + 15;
-    console.log(randNum);
+    $(".randNum").text(randNum);
     crystalOne = Math.floor(Math.random() * 12) + 1;
     crystalTwo = Math.floor(Math.random() * 12) + 1;
     crystalThree = Math.floor(Math.random() * 12) + 1;
     crystalFour = Math.floor(Math.random() * 12) + 1;
 }
+

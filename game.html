@@ -21,38 +21,44 @@
 
 
 
-    <div class="Rules">
+    <div id="rules-area">
+        <h2>You will be given a random number at the start of the game.
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.
+            You win the game by matching your total score to random number, you lose the game if your total score goes
+            above the random number.
+            The value of each crystal is hidden from you until you click on it.
+            Each time when the game starts, the game will change the values of each crystal</h2>
+    </div>
 
-        <ul>You will be give a random munber at the stasrt of the game</ul>
-        <ul>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-            toltale score.</ul>
-        <ul>You win the game by matching your total score to the random number, yo lose the game if your total score
-            goes above the random number</ul>
-        <ul>The value of each crystal is hidden from you until you click on it.</ul>
-        <ul> Each time when the game starts, the game will change teh values of each crystal</ul>
+    <div class="randomBox">
+        <h3>Match this number: <span class="randNum">0</span></h3>
+    </div>
+    <!-- <p>Match this number to win!</p>
+    <p class="randNum"></p> -->
+
+    <div class="winBox">
+        <h3>Wins: <span class="Win">0</span></h3>
+    </div>
+    <!-- <p>Wins:</p>
+    <p class="Win">0</p> -->
+    <!-- <p>Losses:</p>
+    <p class="Losses">0</p> -->
+    <div class="loseBox">
+        <h3>Losses: <span class="Losses">0</span></h3>
     </div>
 
 
-    <p>Open the Console to see this number!
-    
-    </p>
-    <p class="randNum"></p>
-    
 
-    <p>Wins:</p>
-    <p class="Win">0</p>
-    <p>Losses:</p>
-    <p class="Losses">0</p>
+    <button onclick=myClick1() class="crystalOne"> <img src="assets/images/Crystal1.jpg"></button>
+    <button onclick=myClick2() class="crystalTwo"><img src="assets/images/Crystal2.jpg"></button>
+    <button onclick=myClick3() class="crystalThree"><img src="assets/images/Crystal3.jpg"></button>
+    <button onclick=myClick4() class="crystalFour"><img src="assets/images/Crystal4.jpg"></button>
 
+    <!-- <p>Your total score is:</p>
+    <p class="Score">0</p> -->
 
-
-    <button onclick = myClick1() class="crystalOne"> <img src="assets/images/Crystal1.jpg"></button>
-    <button onclick = myClick2() class="crystalTwo"><img src="assets/images/Crystal2.jpg"></button>
-    <button onclick = myClick3() class="crystalThree"><img src="assets/images/Crystal3.jpg"></button>
-    <button onclick = myClick4() class="crystalFour"><img src="assets/images/Crystal4.jpg"></button>
-
-    <p>Your total score is:</p>
-    <p class="Score">0</p>
+    <div class="scoreBox"><h3>Total:<span class="Score">0</span></h3></div>
 
 
 </body>
