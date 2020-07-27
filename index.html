@@ -54,12 +54,29 @@
         <h3>Total:<span class="Score">0</span></h3>
     </div>
 
-    <div class="playbox">
-        <button onclick=myClick1() class="crystalOne"> <img src="assets/images/Crystal1.jpg"></button>
-        <button onclick=myClick2() class="crystalTwo"><img src="assets/images/Crystal2.jpg"></button>
-        <button onclick=myClick3() class="crystalThree"><img src="assets/images/Crystal3.jpg"></button>
-        <button onclick=myClick4() class="crystalFour"><img src="assets/images/Crystal4.jpg"></button>
-    </div>
+        <div class="crystals container-fluid">
+            <span class="card" onclick=myClick1()>
+                <span class="box box1">
+                    <img src="assets/images/Crystal1.jpg">
+                </span>
+                </span>
+                <span class="card" onclick=myClick2()>
+                    <div class="box box2">
+                        <img src="assets/images/Crystal2.jpg">
+                    </div>
+                </span>
+                    <span class="card">
+                        <div class="box box3" onclick=myClick3()>
+                            <img src="assets/images/Crystal3.jpg">
+                        </div>
+                    </span>
+                        <span class="card">
+                            <div class="box box3" onclick=myClick4()>
+                                <img src="assets/images/Crystal4.jpg">
+                            </div>
+                        </span>
+        </div>
+
 
     <footer>A|G Design</footer>
 </body>
